@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function NewsEventTab(){
+export default function NewsEvent(){
     const [value, setValue] = useState("news");
     return (
         <section className="container lg:col-span-3 col-span-1 mx-auto px-4 py-12 ">

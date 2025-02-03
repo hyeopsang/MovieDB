@@ -1,4 +1,4 @@
-import MoviePost from "./MoviePost";
+import MoviePost from "./movie-post";
 import { useEffect, useState } from "react";
 
 import { now_playing } from "@/app/_actions/movie";

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import MoviePost from "./MoviePost";
+import MoviePost from "./movie-post";
 import { upcomming } from "@/app/_actions/movie";
 import { useSearchParams } from "next/navigation";
 
 
-export default function NowMovie() {
+export default function CommingMovie() {
     const searchParams = useSearchParams();
     const current = parseInt(searchParams.get("page") || "1");
     const [posts, setPosts] = useState<Post[]>([]);

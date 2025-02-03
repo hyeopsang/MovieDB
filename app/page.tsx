@@ -7,11 +7,11 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-import MainBanner from "./_components/MainBanner";
-import NewsEventTab from "./_components/NewsEventTab";
-import BoxOffice from "./_components/BoxOffice";
-import NewMovie from "./_components/NewMovie";
-import GenreMovie from "./_components/GenreMovie";
+import MainBanner from "./_components/main-banner";
+import NewsEventTab from "./_components/news-event";
+import BoxOffice from "./_components/boxoffice";
+import NewMovie from "./_components/new-movie";
+import GenreMovie from "./_components/genre-movie";
 
 export default function Page() {
   return (
