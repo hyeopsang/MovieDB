@@ -1,24 +1,27 @@
+'use client';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Calendar, Newspaper } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function NewsEventTab(){
+    const [value, setValue] = useState("news");
     return (
-        <section className="container max-w-custom mx-auto px-4 py-12">
+        <section className="container lg:col-span-3 col-span-1 mx-auto px-4 py-12 ">
         <Tabs defaultValue="news" className="w-full">
           <div className="flex items-center justify-between mb-6">
             <TabsList>
-              <TabsTrigger value="news" className="flex items-center gap-2">
+              <TabsTrigger value="news" className="flex items-center gap-2" onClick={() => setValue("news")}>
                 <Newspaper className="w-4 h-4" />
                 영화 뉴스
               </TabsTrigger>
-              <TabsTrigger value="events" className="flex items-center gap-2">
+              <TabsTrigger value="events" className="flex items-center gap-2" onClick={() => setValue("events")}>
                 <Calendar className="w-4 h-4" />
                 영화 행사
               </TabsTrigger>
             </TabsList>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
+            <Link href={value == 'news' ? '/news' : '/events'} className="text-sm text-muted-foreground hover:text-primary">
               더보기
             </Link>
           </div>

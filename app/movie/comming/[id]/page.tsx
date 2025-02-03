@@ -3,7 +3,6 @@ import { Star, Clock, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function MovieDetail({ params }: { params: { id: string } }) {
-  // 실제 구현에서는 params.id를 사용하여 영화 데이터를 가져와야 합니다.
   return (
     <div className="container max-w-custom mx-auto px-4 py-12">
       <div className="grid md:grid-cols-3 gap-8">

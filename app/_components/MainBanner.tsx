@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 export default function MainBanner() {
     return (
-        <section className="relative h-[60vh] min-h-[400px]">
+        <section className="relative h-[40vh] min-h-[400px]">
         <Image
           src="/placeholder.svg?height=600&width=1200"
           alt="Featured Movie"

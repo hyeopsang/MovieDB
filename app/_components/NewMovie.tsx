@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Star } from 'lucide-react';
-
 export default function NewMovie() {
     return (
         <section className="container max-w-custom mx-auto px-4 py-12">
@@ -18,7 +16,7 @@ export default function NewMovie() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
                   <div className="flex items-center gap-2 text-white">
-                    <Star className="w-4 h-4 fill-primary text-primary" />
+                    <Image src="/assets/star.png" alt="popcorn" width={18} height={18} />
                     <span className="text-sm">4.5</span>
                   </div>
                 </div>
