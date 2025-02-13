@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./_components/Header";
+import Header from "./_components/header";
 
 export const metadata: Metadata = {
   title: "popcorn",
@@ -13,8 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      >
+      <body>
         <Header />
         {children}
       </body>

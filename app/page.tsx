@@ -15,7 +15,7 @@ import GenreMovie from "./_components/genre-movie";
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       <MainBanner />
       <div className="container grid lg:grid-cols-4 md:grid-cols-1 lg:grid-rows-1 md:grid-rows-2 grid-cols-1 grid-rows-2 mx-auto px-4 py-12 h-fit overflow-hidden">
         <NewsEventTab />

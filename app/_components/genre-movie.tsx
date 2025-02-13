@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import poster from '@/public/assets/captin-s.jpeg';
 
 export default function GenreMovie() {
+    
     return (
         <section className="container max-w-custom mx-auto px-4 py-12">
         <h2 className="text-2xl font-bold mb-6">장르별 영화</h2>

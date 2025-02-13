@@ -1,3 +1,4 @@
+'use client';
 import MoviePost from "./movie-post";
 import { useEffect, useState } from "react";
 
@@ -7,7 +8,7 @@ import { useSearchParams } from "next/navigation";
 export default function NowMovie() {
     const searchParams = useSearchParams();
         const current = parseInt(searchParams.get("page") || "1");
-        const [posts, setPosts] = useState<Post[]>([]);
+        // const [posts, setPosts] = useState<Post[]>([]);
         const [total, setTotal] = useState<number>(0);
         const [isLoading, setIsLoading] = useState<boolean>(true);
         useEffect(()=> {
